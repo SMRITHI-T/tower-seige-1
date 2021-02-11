@@ -15,9 +15,6 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    fill("white");
-    textSize(20);
-    text("Drag the hexagonal stone and release it, to launch it towards the blocks. ");
 
 
  // slingshot = new SlingShot(bird.body,{x:200, y:50});
@@ -79,6 +76,9 @@ function setup(){
 function draw(){
   background("dark blue");  
   Engine.update(engine);
+  textSize(20);
+    fill("black");
+    text("Drag the hexagonal stone and release it, to launch it towards the blocks. ", 500,150);
     ground.display();
     ground1.display();
     ground2.display();
